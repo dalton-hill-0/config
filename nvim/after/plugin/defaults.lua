@@ -13,23 +13,23 @@ vim.api.nvim_create_autocmd('BufWritePre', {
 })
 
 -- search
-vim.opt.hlsearch = true
-vim.opt.incsearch = true
+vim.o.hlsearch = true
+vim.o.incsearch = true
 
 -- scroll
-vim.opt.scrolloff = 12
-vim.opt.signcolumn = "yes"
+vim.o.scrolloff = 12
+vim.o.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 -- tab
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-vim.opt.smartindent = true
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.expandtab = true
+vim.o.smartindent = true
 
 -- clipboard
 -- default to system clipboard
-vim.opt.clipboard = "unnamedplus"
+vim.o.clipboard = "unnamedplus"
 
 -- Relative numbers
 vim.wo.relativenumber = true
@@ -43,3 +43,6 @@ vim.keymap.set('n', '<leader>h', ':wincmd h<CR>', { silent = true, noremap = tru
 vim.keymap.set('n', '<leader>j', ':wincmd j<CR>', { silent = true })
 vim.keymap.set('n', '<leader>k', ':wincmd k<CR>', { silent = true })
 vim.keymap.set('n', '<leader>l', ':wincmd l<CR>', { silent = true })
+
+-- additional telescope keybindings
+vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
