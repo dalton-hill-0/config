@@ -34,9 +34,9 @@ vim.opt.clipboard = "unnamedplus"
 -- Relative numbers
 vim.wo.relativenumber = true
 
--- Set colorscheme
+-- Set colorscheme and other term GUI color stuff
 vim.o.termguicolors = true
-vim.cmd("colorscheme nightfox")
+-- vim.cmd("colorscheme nightfox")
 
 -- map better window navigation
 vim.keymap.set('n', '<leader>h', ':wincmd h<CR>', { silent = true, noremap = true })
