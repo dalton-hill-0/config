@@ -2,9 +2,6 @@
 --vim.g.loaded_netrw = 1
 --vim.g.loaded_netrwPugin = 1
 
--- map toggling file tree
-vim.keymap.set('n', '<leader>t', ':Neotree<CR>', { silent = true })
-
 -- always try to execute lsp formatting on write
 -- credit: https://www.jvt.me/posts/2022/03/01/neovim-format-on-save/
 vim.api.nvim_create_autocmd('BufWritePre', {

@@ -12,5 +12,8 @@ return {
   },
   config = function()
     require('neo-tree').setup {}
+
+    -- map toggling file tree
+    vim.keymap.set('n', '<leader>t', ':Neotree toggle<CR>', { silent = true })
   end,
 }
