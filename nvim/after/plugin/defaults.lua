@@ -2,12 +2,13 @@
 --vim.g.loaded_netrw = 1
 --vim.g.loaded_netrwPugin = 1
 
+-- note: this might not be needed now that there is lua/kickstart/plugins/autoformat.lua
 -- always try to execute lsp formatting on write
 -- credit: https://www.jvt.me/posts/2022/03/01/neovim-format-on-save/
-vim.api.nvim_create_autocmd('BufWritePre', {
-  command = [[lua vim.lsp.buf.format()]],
-  pattern = "*",
-})
+--vim.api.nvim_create_autocmd('BufWritePre', {
+--command = [[lua vim.lsp.buf.format()]],
+--pattern = "*",
+--})
 
 -- search
 vim.o.hlsearch = true
