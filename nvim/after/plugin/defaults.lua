@@ -1,6 +1,6 @@
 -- disable netrw at the very start of init.lua, strongly advised from nvim-tree scroll_docs
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPugin = 1
+--vim.g.loaded_netrw = 1
+--vim.g.loaded_netrwPugin = 1
 
 -- map toggling file tree
 vim.keymap.set('n', '<leader>t', ':Neotree<CR>', { silent = true })
