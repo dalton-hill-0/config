@@ -10,9 +10,10 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
-  - ~/.config/alacritty/nightfox.yml
+  #- ~/.config/alacritty/nightfox.yml
   #- ~/.config/alacritty/gruvbox_dark.yml
   #- ~/.config/alacritty/gruvbox_material.yml
+  - ~/.config/alacritty/gruvbox_all.yml
 
 
 # Any items in the `env` entry below will be added as

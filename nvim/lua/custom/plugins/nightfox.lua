@@ -1,7 +1,7 @@
 return {
   -- colorscheme
   "EdenEast/nightfox.nvim",
-  priority = 0,
+  priority = 999,
   config = function()
     vim.cmd.colorscheme 'nightfox'
   end,
