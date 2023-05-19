@@ -4,7 +4,7 @@ return {
   -- file tree plugin
   -- "nvim-tree/nvim-tree.lua",
   "nvim-neo-tree/neo-tree.nvim",
-  version = "*",
+  version = "v2.x",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
