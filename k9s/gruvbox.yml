@@ -1,20 +1,22 @@
 # -----------------------------------------------------------------------------
 # K9s Gruvbox Dark Skin
-# Author: [@indiebrain](https://github.com/indiebrain)
+# Heavily modified by myself (dalton) using colors from gruvbox-material (https://github.com/sainnhe/gruvbox-material)
+# Based from author: [@indiebrain](https://github.com/indiebrain)
 # -----------------------------------------------------------------------------
 
 # Styles...
-foreground: &foreground "#ebdbb2"
-background: &background "#272727"
-current_line: &current_line "#ebdbb2"
-selection: &selection "#3c3735"
-comment: &comment "#bdad93"
-cyan: &cyan "#689d69"
-green: &green "#989719"
-orange: &orange "#d79920"
-magenta: &magenta "#b16185"
-blue: &blue "#448488"
-red: &red "#cc231c"
+foreground: &foreground "#d4be98"
+background: &background "#1d2021"
+current_line: &current_line "#d4be98"
+current_foreground: &current_foreground "#32302f"
+selection: &selection "#282828"
+comment: &comment "#7c6f64"
+cyan: &cyan "#89b482"
+green: &green "#a9b665"
+orange: &orange "#e78a4e"
+magenta: &magenta "#d3869b"
+blue: &blue "#7daea3"
+red: &red "#ea6962"
 
 k9s:
   body:
@@ -81,7 +83,7 @@ k9s:
     table:
       fgColor: *foreground
       bgColor: *background
-      cursorFgColor: "#fff"
+      cursorFgColor: *current_foreground
       cursorBgColor: *current_line
       header:
         fgColor: *foreground
