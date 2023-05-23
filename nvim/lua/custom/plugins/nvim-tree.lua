@@ -2,7 +2,6 @@ vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
 return {
   -- file tree plugin
-  -- "nvim-tree/nvim-tree.lua",
   "nvim-neo-tree/neo-tree.nvim",
   version = "v2.x",
   dependencies = {
@@ -22,6 +21,7 @@ return {
             --"node_modules"
           },
           hide_by_pattern = { -- uses glob style patterns
+            ".git",
             --"*.meta",
             --"*/src/*/tsconfig.json",
           },
