@@ -44,3 +44,7 @@ vim.keymap.set('n', '<leader>l', ':wincmd l<CR>', { silent = true })
 
 -- additional telescope keybindings
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
+
+-- spelling
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
