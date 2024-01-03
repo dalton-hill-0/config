@@ -48,3 +48,5 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 -- spelling
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
+
+vim.cmd([[command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor]])

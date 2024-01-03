@@ -14,24 +14,6 @@ return {
           },
         },
       },
-      -- dalton added custom config to search through hidden files
-      pickers = {
-        find_files = {
-          hidden = true
-        },
-        -- searches through hidden files, such as .gitlab-ci.yml
-        grep_string = {
-          additional_args = function(opts)
-            return { "--hidden" }
-          end
-        },
-        -- searches through hidden files, such as .gitlab-ci.yml
-        live_grep = {
-          additional_args = function(opts)
-            return { "--hidden" }
-          end
-        },
-      },
     }
   end,
 }
