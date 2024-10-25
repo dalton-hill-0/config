@@ -23,6 +23,7 @@ vim.opt.isfname:append("@-@")
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
+vim.o.autoindent = true
 vim.o.smartindent = true
 
 -- clipboard
@@ -49,4 +50,9 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
 
+-- line wrapping
+vim.opt.linebreak = true
+vim.opt.textwidth = 80
+
+-- adding WipeReg command to clear the register
 vim.cmd([[command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor]])
