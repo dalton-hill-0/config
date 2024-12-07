@@ -1,0 +1,70 @@
+
+[[keyboard.bindings]]
+chars = "\u0001"
+key = "A"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0003"
+key = "C"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0004"
+key = "D"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "U"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0012"
+key = "R"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0011"
+key = "Q"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Command"
+
+[general]
+import = ["/home/dh/.config/alacritty/themes/gruvbox-dark.toml"]
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "RobotoMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "RobotoMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "RobotoMono Nerd Font"
+style = "Regular"
+
+[keyboard]
