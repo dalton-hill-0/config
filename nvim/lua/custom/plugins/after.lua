@@ -11,13 +11,13 @@
 --})
 
 -- search
-vim.o.hlsearch = true
-vim.o.incsearch = true
+-- vim.o.hlsearch = true
+-- vim.o.incsearch = true
 
 -- scroll
-vim.o.scrolloff = 12
-vim.o.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+vim.o.scrolloff = 8
+vim.o.signcolumn = 'yes'
+vim.opt.isfname:append '@-@'
 
 -- tab
 vim.o.tabstop = 2
@@ -28,7 +28,7 @@ vim.o.smartindent = true
 
 -- clipboard
 -- default to system clipboard
-vim.o.clipboard = "unnamedplus"
+vim.o.clipboard = 'unnamedplus'
 
 -- Relative numbers
 vim.wo.relativenumber = true
@@ -44,7 +44,7 @@ vim.keymap.set('n', '<leader>k', ':wincmd k<CR>', { silent = true })
 vim.keymap.set('n', '<leader>l', ':wincmd l<CR>', { silent = true })
 
 -- additional telescope keybindings
-vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
+-- vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
 
 -- spelling
 vim.opt.spelllang = 'en_us'
@@ -55,4 +55,6 @@ vim.opt.linebreak = true
 vim.opt.textwidth = 80
 
 -- adding WipeReg command to clear the register
-vim.cmd([[command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor]])
+vim.cmd [[command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor]]
+
+return {}
